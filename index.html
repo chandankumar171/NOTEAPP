@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MCA NOTES</title>
+  <title>NoteHub</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
@@ -14,53 +14,62 @@
   <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">📝 NoteHub</div>
-    <ul class="nav-links">
-      <li><a href="#likedNotesSection">❤️ Liked Notes</a></li>
+
+    <!-- normal nav links (visible on desktop) -->
+    <ul class="nav-links" id="navLinksDesktop">
+      <li><a href="#" data-section="notes" class="nav-link active">Notes</a></li>
+      <li><a href="#" data-section="pyqs" class="nav-link">PYQs</a></li>
+      <li><a href="#" data-section="liked" class="nav-link">❤️ Liked</a></li>
     </ul>
+
+    <!-- bubble hamburger button (attached to navbar on desktop; floats on mobile) -->
+    <div id="bubbleBtn" class="bubble-btn" aria-label="menu" title="Menu">
+      <div class="bubble-icon">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
   </nav>
 
   <!-- Header -->
   <header>
     <h1>Welcome to NoteHub</h1>
-    <h2>GITA(MCA)</h2>
+    <h2>GITA (MCA)</h2>
     <p>Explore and enjoy beautifully crafted notes.</p>
     <input type="text" id="searchBox" placeholder="Search notes..." />
   </header>
 
   <main>
-    <section id="notesSection" class="cards-container">
-      <!-- Note cards will be injected here -->
-    </section>
+    <!-- Notes Section (default visible) -->
+    <section id="notesSection" class="cards-container"></section>
 
-    <h2 id="likedNotesTitle">❤️ Liked Notes</h2>
-    <section id="likedNotesSection" class="cards-container">
-      <!-- Liked notes will appear here -->
-    </section>
+    <!-- PYQs (hidden by default) -->
+    <section id="pyqSection" class="cards-container" style="display:none;"></section>
+
+    <!-- Liked Notes -->
+    <h2 id="likedNotesTitle" style="display:none;">❤️ Liked Notes</h2>
+    <section id="likedNotesSection" class="cards-container"></section>
   </main>
 
-  <div class="cursor-dot"></div>
-  <div class="cursor-trail"></div>
+  <!-- bubble expanded menu overlay (hidden; used for mobile) -->
+  <div id="bubbleMenu" class="bubble-menu" aria-hidden="true">
+    <button class="bubble-close" id="bubbleClose" aria-label="Close menu">&times;</button>
+    <nav class="bubble-links">
+      <a href="#" data-section="notes" class="bubble-link active"><i class="fa-solid fa-book"></i><span>Notes</span></a>
+      <a href="#" data-section="pyqs" class="bubble-link"><i class="fa-solid fa-file-lines"></i><span>PYQs</span></a>
+      <a href="#" data-section="liked" class="bubble-link"><i class="fa-solid fa-heart"></i><span>Liked</span></a>
+    </nav>
+  </div>
 
+  <!-- Developers Section -->
+  <section class="developers-section">
+    <h2>Meet the Developers</h2>
+    <div class="developers-grid" id="developersGrid"></div>
+  </section>
 
   <footer>
     <div class="footer-content">
-      <!-- <h3>All notes are written by Chandan Kumar Sahoo</h3> 
-    <p>
-      <a href="https://portfolio-d6uq.vercel.app/" target="_blank"><b>My Portfolio</b></a>
-    </p>
-    <div class="social-links">
-      <a href="https://linkedin.com/in/chandankumarsahoo" target="_blank" aria-label="LinkedIn">
-        <i class="fab fa-linkedin"></i>
-      </a>
-      <a href="https://github.com/chandankumarsahoo" target="_blank" aria-label="GitHub">
-        <i class="fab fa-github"></i>
-      </a>
-      <a href="https://www.instagram.com/chandan_9_?igsh=bTdpM2R4dWk3dGF1" target="_blank" aria-label="Facebook">
-        <i class="fab fa-instagram"></i>
-      </a> -->
       <p>Namaste!!</p>
-    </div>
-    <p>&copy; 2025 NoteHub. All rights reserved.</p>
+      <p>&copy; 2025 NoteHub. All rights reserved.</p>
     </div>
   </footer>
 
