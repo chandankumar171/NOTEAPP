@@ -6,13 +6,15 @@ const items = [
   { id: 4, type: "pyq", name: "DBMS(Data Base Management System) ", description: "GITA(MCA-2024-25) Semester-1 PYQ", imgSrc: "assets/dbms.jpg", pdfSrc: "https://drive.google.com/file/d/1GROARtKqLnYpcW9VGaRw76_QkF6kjXKv/view?usp=drivesdk" },
   { id: 5, type: "pyq", name: "OS(Operating System notes)", description: "GITA(MCA-2024-25) Semester-1 PYQ", imgSrc: "assets/os.jpg", pdfSrc: "https://drive.google.com/file/d/1bDR8DgTREyaRk-PMzIp_CJqU-pyVIrZf/view?usp=drivesdk" },
   { id: 6, type: "pyq", name: "COA(Computer Organization & Architecture)", description: "GITA(MCA-2024-25) Semester-1 PYQ", imgSrc: "assets/coa.jpg", pdfSrc: "https://drive.google.com/file/d/1AGQdVXcQmzMmaig5Gy_JaMBHsw8RwANI/view?usp=drivesdk" },
-  { id: 7, type: "note", name: "COA(Computer Organization & Architecture) Notes", description: "Computer Organization & Architecture", imgSrc: "assets/coanotes.jpg", pdfSrc: "https://drive.google.com/file/d/1R5XNi96DBTb76ElkPDAPJTXjEeDCwwcK/view?usp=drivesdk" },
-  { id: 8, type: "note", name: "OS(Operating System notes) Notes", description: "Operating System notes", imgSrc: "assets/osnote.jpg", pdfSrc: "https://drive.google.com/file/d/1Y695N-VzRshrFr-qDQ0cclp8cXpalrgc/view?usp=drivesdk" }
+  { id: 7, type: "note", name: "COA(Computer Organization & Architecture) Notes", description: "Computer Organization & Architecture", imgSrc: "assets/coanotes.jpg", pdfSrc: "https://drive.google.com/file/d/1SsnFSiTCa80BHVVsNwUglpJQXO902slo/view?usp=drivesdk" },
+  { id: 8, type: "note", name: "OS(Operating System) Notes", description: "Operating System notes", imgSrc: "assets/osnote.jpg", pdfSrc: "https://drive.google.com/file/d/1zRkZIYUkW797Fy_ssg4bE4tlNLhMbdDP/view?usp=drivesdk" },
+  { id: 8, type: "note", name: "C(C Programming) Notes", description: "C Programming Notes", imgSrc: "assets/C.jpg", pdfSrc: "https://drive.google.com/file/d/16GF7frUAKloCcrZi61_SfH2XNgWe215i/view?usp=drivesdk" },
+  { id: 8, type: "note", name: "DM(Discrete Mathematics) Notes", description: "Discrete Mathematics notes", imgSrc: "assets/math.jpeg", pdfSrc: "https://drive.google.com/file/d/1SCfiSHYIR5TpY0xoJR5I8e0QkNd7rXnN/view?usp=drivesdk" }
 ];
 
 /* ---------- Developers data ---------- */
 const developers = [
-  { name: "Saumya Ranjan Dash", roll: "25MC104", imgSrc: "assets/dev2.jpg" },
+  { name: "Saumya Ranjan Das", roll: "25MC104", imgSrc: "assets/dev2.jpg" },
   { name: "Biswajit Behera", roll: "25MC029", imgSrc: "assets/dev5.jpg" },
   { name: "Rajendra Dora", roll: "25MC093", imgSrc: "assets/dev3.jpg" },
   { name: "Dinesh Sutar", roll: "25MC041", imgSrc: "assets/dev7.jpg" },

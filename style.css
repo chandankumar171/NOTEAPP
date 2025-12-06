@@ -340,12 +340,12 @@ header p {
 /* Improve contrast for text on the glass (bubble) menu */
 .bubble-menu .bubble-links,
 .bubble-menu .bubble-link {
-  color: var(--card-bg);
-  /* dark text for better contrast on translucent glass */
+  color: #ffffff;
+  /* bright white text for better visibility */
 }
 
 .bubble-menu .bubble-link span {
-  color: var(--card-bg);
+  color: #ffffff;
 }
 
 .bubble-menu .bubble-link i {
@@ -353,18 +353,19 @@ header p {
 }
 
 .bubble-menu .bubble-link:hover {
-  background: rgba(0, 0, 0, 0.06);
+  background: rgba(255, 255, 255, 0.1);
   transform: none;
 }
 
 /* close button should also be visible on light glass background */
 .bubble-menu .bubble-close {
-  color: var(--card-bg);
+  color: #ffffff;
+  font-weight: bold;
 }
 
 .bubble-menu .bubble-link.active {
   color: var(--highlight);
-  background: rgba(0, 0, 0, 0.08);
+  background: rgba(255, 255, 255, 0.15);
 }
 
 /* by default bubble-menu is hidden visually on desktop */
